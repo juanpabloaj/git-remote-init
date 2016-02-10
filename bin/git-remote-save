@@ -4,4 +4,3 @@ gitTop=$( git rev-parse --show-toplevel 2> /dev/null )
 gitRemotes=$gitTop/.gitremotes
 [[ "$( git remote -v )" == "" ]] && exit 0
 git remote -v > $gitRemotes
-git add $gitRemotes
